@@ -79,7 +79,7 @@
                             <% if(key.includes("fa-")) { %>
                                 <span class="social-contact-item-qr">
                                 <a target="_blank">
-                                    <i class="<%= key %> fa-sm"></i>
+                                    <i class="<%= key %> fa-sm">微信</i>
 									<div class="social-qr-container fade-in-down-animation">
 										<img class="social-contacts-qr"
                                              src="<%- url_for(theme.home_banner.social_links.qrs[key]) %>"/>
@@ -89,7 +89,8 @@
                             <% } else { %>
                                 <span class="social-contact-item-qr <%= key %>">
                                 <a target="_blank">
-                                    <i class="fa-brands fa-<%= key %>"></i>
+<!--                                    <i class="fa-brands fa-<%= key %>"><%= key %></i>-->
+                                    <i class="fa-brands"><%= key %></i>
 									<div class="social-qr-container fade-in-down-animation">
 										<img class="social-contacts-qr"
                                              src="<%- url_for(theme.home_banner.social_links.qrs[key]) %>"/>
@@ -102,6 +103,7 @@
                 <% } %>
             </div>
         <% } %>
+
     </div>
 </div>
 

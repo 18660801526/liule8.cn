@@ -22,9 +22,9 @@
                 <h1 class="article-title-regular"><%= page.title %></h1>
             <% } %>
             </div>
-            
-                    
-        
+
+
+
         <% if (theme.info.author || config.author) { %>
             <div class="article-header flex flex-row gap-2 items-center">
                 <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
@@ -86,6 +86,15 @@
             <%- page.content %>
         </div>
 
+        <div class="post-copyright-info">
+            <strong>更多精彩内容请下载APP或访问小程序！</strong>
+            <br />
+            <br />
+            <strong>抖音小程序</strong>
+            <img src="/images/douyin_qrcode.png" style="width: 200px" />
+
+
+        </div>
         <% if (theme.articles.copyright) { %>
             <div class="post-copyright-info">
                 <%- partial('_meta/article-copyright') %>
