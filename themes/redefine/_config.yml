@@ -176,6 +176,9 @@ navbar:
     文章:
       path: /archives
       icon: fa-regular fa-archive # can be empty
+    下载:
+      path: /download/canmouzhang.apk
+      icon: fa-regular fa-download  # can be empty
 #     Status:
     #   path: https://status.evanluo.top/
     #   icon: fa-regular fa-chart-bar
